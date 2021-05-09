@@ -1,0 +1,27 @@
+/*myVideo is making vid cover whole screen */
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*container is centering and displaying text on top of video*/
+.container {
+    position: absolute;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: black;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+h1 {
+   font-size: 60px;
+   font-weight: bold;
+   text-shadow: 2px 2px 8px blue;
+
+}
