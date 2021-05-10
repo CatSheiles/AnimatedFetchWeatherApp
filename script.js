@@ -1,6 +1,6 @@
-let weatherContainer = document.querySelector('.container');
 let searchBox = document.getElementById('searchBox');
-let searchButton = document.querySelector('button');
+let searchButton = document.querySelector('.button');
+let weathercontent = document.getElementById("weathercontent");
 
 let city = '';
 
@@ -30,15 +30,16 @@ async function GetWeather()
         </div>
     `;
 
-    weatherContainer.innerHTML += template
+    weathercontent.innerHTML = template;  //putting city's weather data on page
+    city = '';                            //clears city after input
+    searchBox.value = '';                //clears searchbox afer input
+    searchBox = document.getElementById('searchBox'); //resync's input if you want to search for another location after first city input
 }
-//GetWeather();
 
-searchButton.addEventListener('click', () => {
+function btnClick(){
     city = searchBox.value;
     GetWeather();
-});
-
+}
 
 
 //6adf14186495bc9a9014337d3a070921
