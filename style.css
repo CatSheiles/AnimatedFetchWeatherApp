@@ -66,3 +66,9 @@ input, #searchBox {
     background-color: #ff8300;
     color: black;
 }
+
+.msg404 {
+    font-weight: bolder;
+     color: yellow;
+ 
+}
